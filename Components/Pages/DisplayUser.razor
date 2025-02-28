@@ -1,0 +1,14 @@
+@page "/DisplayUser"
+@using BlazorVSCodeNet8.Models
+
+<p>Name :@a.Name </p>
+<p>Email :@a.Email </p>
+<p>Password :@a.Password </p>
+
+@code {
+  public ApplicationUser a = new(){
+    Id = 1,
+    Name = "Sugar",
+    Email = "sugar@gmail.com", Password = "123" 
+  };
+}
